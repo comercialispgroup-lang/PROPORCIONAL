@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora ISP</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Calculadora Proporcionales ISP</h1>
+      <p>Sistema interno de cálculo</p>
+    </header>
+
+    <section class="card">
+      <h2>Cargar Excel</h2>
+
+      <input type="file" id="excelFile" accept=".xlsx,.xls" />
+
+      <div class="status" id="status">
+        Esperando archivo Excel...
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Datos del Cliente</h2>
+
+      <div class="grid">
+
+        <div>
+          <label>Localidad</label>
+          <select id="localidad"></select>
+        </div>
+
+        <div>
+          <label>Tipo Cliente</label>
+          <select id="tipoCliente">
+            <option value="FINAL">Final</option>
+            <option value="COMERCIAL">Comercial</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Tecnología</label>
+          <select id="tecnologia">
+            <option value="FO">FO</option>
+            <option value="RF">RF</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Mes</label>
+          <select id="mes"></select>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cambio de Plan</h2>
+
+      <div class="grid">
+
+        <div>
+          <label>Plan Viejo</label>
+</html>
